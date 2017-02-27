@@ -7,13 +7,13 @@
 # BASKET .............................................................
 class Basket(object):
     # Constructor with default values
-    def __init__(self, owner=None, thief=None):
+    def __init__(self, owner, thief):
         self.owner = owner
         self.thief = thief
         self.sleeper = None
 
     # When the owner or the thief sleep in the basket, the owner is alerted
-    # We don't need to check who has sleep in neither who is the owner (Dog?)
+    # We don't need to check who and sleep in neither who is the owner (Dog?)
     # because python use the duck typing
     def sleepIn(self, sleeper):
         print("# %s sleeps in the basket" % (sleeper.name))
