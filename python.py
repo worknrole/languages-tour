@@ -44,7 +44,7 @@ class OwnerOrThief(object):
         self.name = name
         self.age = age
 
-    # Dog description
+    # Define which this class is used
     def who(self):
         return type(self).__name__ # == self.__class__.__name__
 
